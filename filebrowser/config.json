@@ -87,7 +87,7 @@
     "share:rw",
     "ssl:rw"
   ],
-  "name": "Filebrowser",
+  "name": "Compasoft Cloud",
   "options": {
     "NoAuth": true,
     "certfile": "fullchain.pem",
@@ -96,7 +96,7 @@
     "ssl": false
   },
   "panel_admin": false,
-  "panel_icon": "mdi:file-search",
+  "panel_icon": "mdi:cloud",
   "ports": {
     "8080/tcp": null
   },
