@@ -71,7 +71,7 @@ devices:
   - /dev/md2
   - /dev/md3
 environment:
-  FB_BASEURL: /compasoftcloud
+  FB_BASEURL: /filebrowser
   PGID: "0"
   PUID: "0"
 homeassistant: 2025.5.0
@@ -120,7 +120,7 @@ schema:
   localdisks: str?
   networkdisks: str?
   ssl: bool
-slug: compasoftcloud
+slug: filebrowser
 udev: true
 url: https://github.com/alexbelgium/hassio-addons
 version: "2.63.2"
