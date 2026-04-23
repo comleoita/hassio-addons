@@ -2,7 +2,7 @@ arch:
   - aarch64
   - amd64
 description:
-  filebrowser provides a file managing interface within a specified directory
+  compasoftcloud provides a file managing interface within a specified directory
   and it can be used to upload, delete, preview, rename and edit your files
 devices:
   - /dev/dri
@@ -71,11 +71,11 @@ devices:
   - /dev/md2
   - /dev/md3
 environment:
-  FB_BASEURL: /filebrowser
+  FB_BASEURL: /compasoftcloud
   PGID: "0"
   PUID: "0"
 homeassistant: 2025.5.0
-image: ghcr.io/alexbelgium/filebrowser-{arch}
+image: ghcr.io/alexbelgium/compasoftcloud-{arch}
 ingress: true
 ingress_port: 8071
 ingress_stream: true
@@ -88,7 +88,7 @@ map:
   - backup:rw
   - share:rw
   - ssl:rw
-name: Filebrowser
+name: Compasoft Cloud
 options:
   env_vars: []
   NoAuth: true
@@ -97,7 +97,7 @@ options:
   keyfile: privkey.pem
   ssl: false
 panel_admin: false
-panel_icon: mdi:file-search
+panel_icon: mdi:cloud
 ports:
   8080/tcp: 8071
 ports_description:
@@ -120,7 +120,7 @@ schema:
   localdisks: str?
   networkdisks: str?
   ssl: bool
-slug: filebrowser
+slug: compasoftcloud
 udev: true
 url: https://github.com/alexbelgium/hassio-addons
 version: "2.63.2"
